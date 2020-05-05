@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-      
+     <link rel="stylesheet" type="text/css" href="./slick/slick.css">
+     <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="./upqode.css">
     <meta charset="UTF-8">
     <title>Document</title>
@@ -9,6 +11,38 @@
 <body>
     
     <header>
+                <!--    top navbar & logo   -->
+
+        <div class="logo flex"> 
+        <img src="img/header/logo.png" alt="logo">
+        <p>Upqode</p>
+        </div>
+        <nav class="flex">
+            <a href="#">Home</a>
+            <a href="#">Services</a>
+            <a href="#">Team</a>
+            <a href="#">Contact Us</a>
+            
+        </nav>
+        
+         <!-----     Header slider      ------->
+                
+    <section class="lazy slider" data-sizes="50vw">
+    <div>
+      <img data-lazy="http://placehold.it/350x300?text=1-350w" data-srcset="http://placehold.it/650x300?text=1-650w 650w, http://placehold.it/960x300?text=1-960w 960w" data-sizes="90vw">
+    </div>
+    <div>
+      <img data-lazy="http://placehold.it/350x300?text=2-350w" data-srcset="http://placehold.it/650x300?text=2-650w 650w, http://placehold.it/960x300?text=2-960w 960w" data-sizes="90vw">
+    </div>
+    <div>
+      <img data-lazy="http://placehold.it/350x300?text=3-350w"  data-srcset="http://placehold.it/650x300?text=3-650w 650w, http://placehold.it/960x300?text=3-960w 100vh" data-sizes="90vw">
+    </div>
+       
+  </section>
+        
+        
+        
+        
         
         
         
@@ -27,7 +61,17 @@
         
         
     </footer>
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js" ></script>
+  <script src="slick/slick.js" ></script>
     
-<script src="./upqode.js"></script>    
+<script src="./upqode.js"></script>
+     <script type="text/javascript">
+    $(document).on('ready', function() {
+      $(".lazy").slick({
+        lazyLoad: 'ondemand', // ondemand progressive anticipated
+        infinite: true
+      });
+    });
+</script> 
 </body>
 </html>
