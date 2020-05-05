@@ -24,7 +24,8 @@
 
     position: absolute;
     top: 50%;
-
+    margin: 0 80px;
+    
     display: block;
 
     width: 20px;
@@ -35,11 +36,11 @@
     transform: translate(0, -50%);
 
     cursor: pointer;
-
-    color: transparent;
+    z-index: 3;
+    color: black;
     border: none;
     outline: none;
-    background: transparent;
+    background: black;
 }
 .slick-prev:hover,
 .slick-prev:focus,
