@@ -2,8 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-     font-family: 'Poppins', sans-serif;
+     font-family: 'Poppins';
     font-style: normal;
+}
+button {
+    cursor: pointer;
 }
 
 .flex{
@@ -12,7 +15,7 @@
     align-items:center;
 }
 
-
+                /*header sections*/
 
 header {
     
@@ -59,7 +62,7 @@ nav {
 nav a {
     
    color: #FFFFFF; 
-   letter-spacing: 0.2px;
+
    text-decoration: none;
     transition: all 0.4s;
     border-bottom: 2px solid transparent;
@@ -74,6 +77,90 @@ nav a:hover {
      
     width: 100% !important;
     height: 100% !important;
-    
+   }
+
+                         /*services section*/
+#services {
+    position: relative;
+    margin: 5% 19% 0 17%;
+
 }
 
+.track {
+    justify-content: space-between !important;
+    align-items: end;
+    margin-bottom: 7px;
+
+}
+/*phone image wrapper*/
+
+.track_img {
+    position: relative;
+}
+ .oval ,
+ .border {
+    position:absolute ;
+     z-index: -1;
+}
+
+.oval {
+    left: 4px;
+    top: 64px;
+}
+.border {
+    left: -61px;
+    top: 2px;
+}
+#rotate {
+    transform: rotate(18deg);
+    }
+
+h1{
+    font-weight: 800;
+    font-size: 38px;
+    line-height: 51px;
+    letter-spacing: 0.4px;
+    color: #00A031;
+}
+
+.txt-track {
+    padding: 85px  0 0 20px;
+}
+
+
+.txt{
+
+    font-size: 16px;
+    margin-top: 24px;
+    letter-spacing: 0.2px;
+    color: #6C6C6C;
+}
+
+.lean_more {
+    border: 2px solid #00A031;
+    box-sizing: border-box;
+    border-radius: 28px;
+    padding: 13px 36px;
+    background-color: white;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #00A031;
+    margin-top: 30px;
+}
+
+#circleLine {
+    position: absolute;
+    left: 248px;
+    top: 290px;
+    z-index: -3;
+}
+#last {
+    margin-top: 65px;
+}
+
+                            /*Team section Team*/
+
+#Team {
+    margin-top: 230px;
+}
